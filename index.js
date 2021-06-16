@@ -79,6 +79,7 @@ Person.prototype.toString = function(){
   }
  Car.prototype.fill = function(gallons){
    return this.tank += gallons;
+   //this.tank = this.tank + gallons;
  }
   
   /*
@@ -101,10 +102,15 @@ Person.prototype.toString = function(){
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+
+    1. Whenever a function is contained in global scope, the value of 'this' inside of that function will be the window object
+
+    2. Whenever a function belongs to an object and the function is invoked, look to the left of the dot and that's what 'this' refers to.
+
+    3. When a function is called on as a constructor function 'this' points to the newly created object  
+
+    4. Whenever call or apply methods are used 'this' is defined 
+
   */
   
   
